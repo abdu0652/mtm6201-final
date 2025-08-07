@@ -251,14 +251,6 @@ h2 {
   color: white;
 }
 
-.email-icon-link {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.email-icon-link:hover {
-  transform: scale(1.5);
-}
 
 .social-card a {
   display: inline-block;
