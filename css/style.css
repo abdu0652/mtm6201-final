@@ -1,0 +1,448 @@
+/* css styles */
+:root {
+    --color-green: #b0c643;
+    --color-red: #cd4849;
+    --color-beige: #d0c3b1;
+    --color-lightblue: #79ada0;
+    --color-darkblue: #267993;
+    --text-light: #ffedd3;
+    --text-dark: #69585f;
+}
+
+/* fonts*/
+h1,
+h2 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 800;
+}
+
+/* navigation styles */
+.navbar {
+    background-color: var(--color-green);
+}
+
+.text-purple {
+    color: var(--text-dark);
+}
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.input-group-text {
+    background-color: var(--text-dark);
+    color: #BED7BC;
+    border: none;
+}
+
+
+.nav-text {
+    font-family: 'Abhaya Libre', serif;
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-dark);
+    font-weight: 500;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 0 2px;
+    padding-bottom: 0.2rem;
+    transition: background-size 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--text-dark);
+}
+
+
+/* hover underline */
+.navbar-nav .nav-link:hover {
+    background-image: linear-gradient(var(--text-dark), var(--text-dark));
+    background-size: 100% 2px;
+}
+
+.navbar-nav:not(:hover) .nav-link.active {
+    background-image: linear-gradient(var(--text-dark), var(--text-dark));
+    background-size: 100% 2px;
+}
+
+/* footer styles */
+.site-footer {
+    background-color: var(--color-green);
+    color: white;
+    margin-top: 0 !important;
+}
+
+.site-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-social-icons a {
+    transition: transform 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+    transform: scale(1.7);
+}
+
+.site-footer img {
+    width: 90px;
+}
+
+/* home page hero */
+.hero-section {
+    background-color: var(--color-red);
+    padding: 1.5rem;
+}
+
+.hero-section .container {
+    background-color: var(--color-beige);
+    padding: 3rem 2rem;
+    max-width: 900px;
+}
+
+.hero-section h1 {
+    color: var(--color-darkblue);
+    font-weight: 700;
+}
+
+.hero-section p {
+    color: var(--color-darkblue);
+    margin-top: 1rem;
+}
+
+/* home page feature + how it works */
+.how-it-works {
+    background-color: var(--color-lightblue);
+    padding: 3rem 1rem;
+    color: var(--text-light);
+}
+
+.how-heading {
+    color: var(--text-light);
+    font-weight: 600;
+    text-align: left;
+}
+
+.how-text {
+    font-weight: 250;
+    text-align: left;
+}
+
+
+/* about page */
+.about-section {
+    font-family: 'Actor', sans-serif;
+}
+
+/* our services */
+.about-services {
+    background-color: var(--color-red);
+    color: var(--text-light);
+}
+
+.services-heading {
+    color: var(--text-light);
+}
+
+.services-text {
+    font-size: 1rem;
+}
+
+/* about us label */
+.about-vertical {
+    background-color: var(--color-darkblue);
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: 'Anaheim', sans-serif;
+    font-weight: bold;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+}
+
+/* our mission */
+.about-mission {
+    background-color: #ffffff;
+}
+
+.mission-heading {
+    color: var(--text-dark);
+}
+
+.mission-text {
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+/* light blue bar */
+.light-blue-bar-fill {
+    background-color: var(--color-lightblue);
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+}
+
+
+/* perfume bottles */
+.about-section img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* quote */
+.quote-block {
+    background-color: var(--color-green);
+    padding: 2rem 1rem;
+}
+
+.quote-text {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    line-height: 1.4;
+}
+
+.remove-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* footer color */
+.about-footer {
+    background-color: var(--color-lightblue);
+}
+
+/* contact page */
+.contact-hero {
+  height: 800px;
+  overflow: hidden;
+}
+
+.contact-hero picture,
+.contact-hero img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.contact-boxes {
+  margin-top: -600px;
+  position: relative;
+}
+
+.contact-card i {
+  color: white;
+}
+
+.email-icon-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.email-icon-link:hover {
+  transform: scale(1.5);
+}
+
+.social-card a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-card a:hover {
+  transform: scale(1.5);
+}
+
+.contact-card {
+  background-color: var(--color-lightblue);
+}
+
+.btn-email {
+  background-color: var(--color-red);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn-email:hover,
+.btn-email:focus {
+  background-color: #903232;
+  transform: scale(1.2);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+
+.dark-blue-background {
+  background-color: var(--color-darkblue);
+}
+
+
+.contact-footer {
+    background-color: var(--color-red);
+}
+
+
+.email-card h2,
+.email-card p {
+  color: var(--text-light);
+}
+
+.social-card h2,
+.social-card p {
+  color: var(--text-dark);
+}
+
+
+/* home page media query */
+@media (min-width: 768px) {
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav:not(:hover) .nav-link.active {
+        background-size: 80% 2px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-section .container {
+        max-width: none;
+        width: 100%;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .break-sm {
+        display: block;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .hero-section .container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .hero-section {
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .services-text,
+    .mission-text {
+        font-size: 1.1rem;
+    }
+
+    .quote-text {
+        font-size: 1.4rem;
+    }
+
+    .about-vertical,
+    .light-blue-bar-fill,
+    .about-mission {
+        min-height: 100%;
+    }
+
+    .about-section picture img,
+    .quote-block {
+        max-height: 300px;
+        object-fit: cover;
+    }
+}
+
+
+/* about page media query */
+@media (min-width: 1025px) {
+    .about-services {
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem !important;
+    }
+
+    .services-heading {
+        font-size: 2.2rem;
+    }
+
+    .services-text {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .about-vertical {
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vertical-text {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .about-mission {
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem !important;
+    }
+
+    .mission-heading {
+        font-size: 2rem;
+    }
+
+    .mission-text {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .light-blue-bar-fill {
+        min-height: 400px;
+    }
+
+    .about-img-perfume,
+    .about-img-perfume img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .quote-block {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
